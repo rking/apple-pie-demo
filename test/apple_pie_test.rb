@@ -1,6 +1,5 @@
 require_relative 'test_helper'
 
-
 class ApplePieTest < MiniTest::Unit::TestCase
   def setup
     expensive_setup
