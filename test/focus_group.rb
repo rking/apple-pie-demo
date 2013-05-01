@@ -7,6 +7,7 @@ end
 
 class FocusGroup
   PEOPLE = [
+    Taster.new(:size, :very_very_big),
     Taster.new(:deliciousness, :maximum),
     Taster.new(:crust, :supa_flaky),
   ]

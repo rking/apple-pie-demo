@@ -1,7 +1,8 @@
 class ApplePie
-  attr_accessor :deliciousness, :crust
+  attr_accessor :size, :deliciousness, :crust
 
   def bake_like_mommy_does
+    self.size = :very_very_big
     self.deliciousness = :ok
     self.crust = :soggy
   end

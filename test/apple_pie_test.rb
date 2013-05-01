@@ -31,6 +31,6 @@ class ApplePieTest < MiniTest::Unit::TestCase
 
   def test_opinion
     average = FocusGroup.average_opinion_of @pie
-    assert_operator average, :>=, 0.7
+    assert_operator average, :>=, 0.2
   end
 end
