@@ -7,4 +7,8 @@ class ApplePie
   end
 
   alias measure send
+
+
+  # Add a hack, just enough ActiveRecord for this to work:
+  alias save! hash
 end
