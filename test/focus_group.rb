@@ -7,10 +7,8 @@ end
 
 class FocusGroup
   PEOPLE = [
-    Taster.new(:crust, :supa_flaky),
-    Taster.new(:ingreedients, :fresh),
-    Taster.new(:size, :very_very_large),
     Taster.new(:deliciousness, :maximum),
+    Taster.new(:crust, :supa_flaky),
   ]
   def self.average_opinion_of pie
     happy = PEOPLE.find_all { |e| e.likes pie }.size

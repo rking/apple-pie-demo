@@ -1,8 +1,10 @@
+require_relative '../lib/universe'
+
 FactoryGirl.define do
+
   factory :apple_pie do
-    size :very_very_large
-    deliciousness :maximum
-    crust :supa_flaky
+    before :create do
+      Universe.new
+    end
   end
 end
-
