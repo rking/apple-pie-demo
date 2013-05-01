@@ -12,8 +12,18 @@ load 'lib/apple_pie.rb'
 
 class ApplePieTest < MiniTest::Unit::TestCase
   def setup
-    @pie = FactoryGirl.build :apple_pie
+    expensive_setup
+    quick_setup
   end
+
+  def expensive_setup
+    @pie = FactoryGirl.create :apple_pie
+  end
+
+  def quick_setup
+    @pie.bake_like_mommy_does
+  end
+
   def test_opinion
     average = FocusGroup.average_opinion_of @pie
     assert_operator average, :>=, 0.7
