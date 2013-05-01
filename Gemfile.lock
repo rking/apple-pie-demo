@@ -59,6 +59,7 @@ GEM
     pry-stack_explorer (0.4.9)
       binding_of_caller (>= 0.7)
       pry (~> 0.9.11)
+    rake (10.0.4)
     slop (3.4.4)
     turn (0.9.6)
       ansi
@@ -72,4 +73,5 @@ DEPENDENCIES
   minitest
   pry!
   pry-plus
+  rake
   turn
