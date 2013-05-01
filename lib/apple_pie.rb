@@ -2,8 +2,8 @@ class ApplePie
   attr_accessor :deliciousness, :crust
 
   def bake_like_mommy_does
-    self.deliciousness = :maximum
-    self.crust = :supa_flaky
+    self.deliciousness = :ok
+    self.crust = :soggy
   end
 
   alias measure send
