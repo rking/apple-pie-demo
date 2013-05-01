@@ -1,7 +1,7 @@
 %w(
 turn
 minitest/autorun
-pry-rescue/minitest
+pry-rescue
 factory_girl
 ).each do |e| require e end
 FactoryGirl.find_definitions
